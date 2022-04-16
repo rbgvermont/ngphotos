@@ -9,8 +9,11 @@ const NavContainer = styled.div`
 `;
 
 const StyledLink = styled.a`
+  @import url('https://fonts.googleapis.com/css2?family=Lato');
+
   color: red;
   padding: 20px;
+  font-family: Lato;
 
   &:hover {
     color: blue;
@@ -22,8 +25,9 @@ const NavHeader = styled.div`
 display: flex;
 width: 100%:
 align-items: center;
-font-size: 37px;
-font-family: "Lato", Sans-Serif;
+font-size: 20px;
+font-family: Lato;
+font-weight: 400;
 text-align: center;
 `;
 
