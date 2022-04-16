@@ -8,7 +8,7 @@ const NavContainer = styled.div`
   flex-direction: column;
 `;
 
-const NavLink = styled(Link)`
+const StyledLink = styled.a`
   color: red;
   padding: 20px;
 
@@ -34,18 +34,21 @@ export const Header = (props) => {
         <h1>Norman Gershman Photographic Archive</h1>
       </NavHeader>
       <div>
-        <NavLink href="/">HOME</NavLink>
-        <NavLink href="/welcome">WELCOME
-        </NavLink>
-        <NavLink href="/archives">
-          ARCHIVES
-        </NavLink>
-        <NavLink href="/inquiries">
-          INQUIRIES
-        </NavLink>
-        <NavLink href="/contact">
-          CONTACT
-        </NavLink>
+        <Link href="/" passHref>
+          <StyledLink>HOME</StyledLink>
+        </Link>
+        <Link href="/welcome" passHref>
+          <StyledLink>WELCOME</StyledLink>
+        </Link>
+        <Link href="/archives" passHref>
+          <StyledLink>ARCHIVES</StyledLink>
+        </Link>
+        <Link href="/inquiries" passHref>
+          <StyledLink>INQUIRIES</StyledLink>
+        </Link>
+        <Link href="/contact" passHref>
+          <StyledLink>CONTACT</StyledLink>
+        </Link>
       </div>
     </NavContainer>
   )
