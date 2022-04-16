@@ -1,23 +1,10 @@
-import Head from 'next/head'
-
-
-// Layout
-import { Header } from '../src/components/Header';
-import { Footer } from '../src/components/Footer';
+import  Layout from '../src/components/Layout';
 
 export default function Archives() {
   return (
 
-    <div>
-      <Head>
-        <title>ngphoto-cna</title>
-      </Head>
-      <main>
-      <Header>
-      </Header>
-      <h1>Archives</h1>
-      <Footer></Footer>
-      </main>
-    </div>
+    <Layout title="normangershman.com - archives">
+        <h1>Archives</h1>
+    </Layout>
   )
 }

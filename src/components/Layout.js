@@ -1,4 +1,5 @@
 
+import Head from 'next/head';
 import styled from 'styled-components';
 
 // Layout
@@ -12,13 +13,18 @@ const Container = styled.div`
   margin: 0px auto;
 `;
 
-export default function Layout( { children }) {
+export default function Layout( props ) {
 
   return (
-    <div>
-      <Header/>
-      {children}
-      <Footer/>
-    </div>
+    <>
+    <Head>
+      <title>{props.title}</title>
+    </Head>
+      <Container>
+        <Header/>
+        {props.children}
+        <Footer/>
+      </Container>
+    </>
   )
 }
