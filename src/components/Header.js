@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image'
 import Link from 'next/link';
 
 const NavContainer = styled.div`
@@ -28,12 +29,27 @@ font-size: 20px;
 text-align: center;
 `;
 
+const LogoWrapper = styled.div`
+display: flex;
+justify-content: center;
+margin-bottom: 40px;
+`;
+
 export const Header = (props) => {
   return (
     <NavContainer>
       <NavHeader>
         <h1>NORNAM GERSHMAN PHOTOGRAPHIC ARCHIVE</h1>
       </NavHeader>
+      <LogoWrapper>
+      <Image
+        src="/img/layout/NG_ICON.webp"
+        alt="Facebook"
+        layout="fixed"
+        width="70"
+        height="70"
+      />
+      </LogoWrapper>
       <div>
         <Link href="/" passHref>
           <StyledLink>HOME</StyledLink>
@@ -51,6 +67,7 @@ export const Header = (props) => {
           <StyledLink>CONTACT</StyledLink>
         </Link>
       </div>
+
     </NavContainer>
   )
 }

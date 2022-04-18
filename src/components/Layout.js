@@ -8,7 +8,7 @@ import { Footer } from './Footer.js';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 880px;
+  max-width: 980px;
   margin: 0px auto;
 `;
 
