@@ -5,6 +5,7 @@ import  Layout from '../src/components/Layout';
 
 const WelcomeWrapper = styled.div`
   display: flex;
+  flex-direction: column;
 
 `
 

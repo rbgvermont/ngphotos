@@ -9,25 +9,22 @@ const NavContainer = styled.div`
 `;
 
 const StyledLink = styled.a`
-  @import url('https://fonts.googleapis.com/css2?family=Lato');
 
-  color: red;
+  color: #FFEE59;
   padding: 20px;
-  font-family: Lato;
 
   &:hover {
-    color: blue;
     cursor: pointer;
   }
 `;
 
 const NavHeader = styled.div`
+color: #757575;
+font-weight: light;
 display: flex;
 width: 100%:
 align-items: center;
 font-size: 20px;
-font-family: Lato;
-font-weight: 400;
 text-align: center;
 `;
 
@@ -35,7 +32,7 @@ export const Header = (props) => {
   return (
     <NavContainer>
       <NavHeader>
-        <h1>Norman Gershman Photographic Archive</h1>
+        <h1>NORNAM GERSHMAN PHOTOGRAPHIC ARCHIVE</h1>
       </NavHeader>
       <div>
         <Link href="/" passHref>
