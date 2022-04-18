@@ -84,7 +84,7 @@ export default function Ladiesofthepalace() {
         <PhotoGallery photos={photos} />
 
 <p>
-&lsquo;Ladies of the Palace&rsquo; is Norman Gershman's last series of work created at The Palace in Coral Gables in 2018. These photos are a tribute to ageless beauty that is as much of the spirit as it is of the flesh reflective of living to the fullest. This is but a sampling of the series.</p>
+&lsquo;Ladies of the Palace&rsquo; is Norman Gershman&apos;s last series of work created at The Palace in Coral Gables in 2018. These photos are a tribute to ageless beauty that is as much of the spirit as it is of the flesh reflective of living to the fullest. This is but a sampling of the series.</p>
 
 <p>These photos will be available soon as an exhibit or as prints to purchase. Please send an inquiry of interest to the archive.</p>
 <p>And, should you know the names of these grand belles, please do let us know. Thank you.</p>
