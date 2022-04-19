@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 // Layout
 import { Header } from './Header.js';
+import { Header2 } from './Header2.js';
 import { Footer } from './Footer.js';
 
 const Container = styled.div`
@@ -20,7 +21,7 @@ export default function Layout( props ) {
       <title>{props.title}</title>
     </Head>
       <Container>
-        <Header/>
+        <Header2/>
         {props.children}
         <Footer/>
       </Container>
