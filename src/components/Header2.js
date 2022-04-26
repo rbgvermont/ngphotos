@@ -41,7 +41,7 @@ export const Header2 = (props) => {
     <NavContainer>
       <NavHeader>
       <Link href="/" passHref>
-        <h1>NORNAM GERSHMAN PHOTOGRAPHIC ARCHIVE</h1>
+        <h1>NORMAN GERSHMAN PHOTOGRAPHIC ARCHIVE</h1>
       </Link>
       </NavHeader>
       <LogoWrapper>
