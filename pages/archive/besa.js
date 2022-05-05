@@ -6,16 +6,140 @@ export default function Besa() {
 
   var photos = [
     {
-      src: "/img/sovietportrait/ASP_02-earlyeveningmoscow.jpg",
+      src: "/img/besa/BESA1b.jpg",
+      width: 600,
+      height: 800
+    },
+    {
+      src: "/img/besa/BESA2b.jpg",
+      width: 600,
+      height: 800
+    },
+    {
+      src: "/img/besa/BESA3b.jpg",
       width: 800,
       height: 600
     },
     {
-      src: "/img/sovietportrait/ASP_05-portraitwithfriendskiev.jpg",
+      src: "/img/besa/BESA4b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA5b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA6b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA7b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA8b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA9b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA10b.jpg",
+      width: 600,
+      height: 800
+    },
+    {
+      src: "/img/besa/BESA11b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA12b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA13b.jpg",
+      width: 600,
+      height: 800
+    },
+    {
+      src: "/img/besa/BESA14b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA15b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA16b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA17b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA18b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA19b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA20b.jpg",
+      width: 600,
+      height: 800
+    },
+    {
+      src: "/img/besa/BESA21b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA22b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA23b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA24b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA25b.jpg",
+      width: 600,
+      height: 800
+    },
+    {
+      src: "/img/besa/BESA26b.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      src: "/img/besa/BESA27b.jpg",
       width: 800,
       height: 600
     }
-
   ]
 
   return (
@@ -23,20 +147,6 @@ export default function Besa() {
     <Layout title="normangershman.com - archives - natural world">
       <h2>BESA (LIMITED AVAILAIBLITY)</h2>
       <div>
-
-        <p>
-        &lsquo; Who will view my pictures? Of course, there will be family and friends, but also people I may never know. It is the romance of my life, both the subjects of the photographs included here and my great love affair with photography that I invite you to celebrate with me in this book. &rsquo;</p>
-
-        <p>Norman Gershman photographs with his heart. Of course, he knows the craft of photography. He makes his own prints with tender care, and he collects great photographs taken by others. but, when he goes to &lsquo;Mother Russia,&rsquo; something special happens inside of him, and here are some of his impressions of that emotional journey.</p>
-
-        <p>The beauty and importance of photography is that the images form a person&apos;s permanent visual album of memory. No one knows the mystery of another&apos;s human heart. These reveal one man&quot;s secret: Gershman has exposed his own.&rsquo;</p>
-
-        <p>Cornell Capa</p>
-        <p>Director</p>
-        <p>International Center of Photography/ICP</p>
-        <p>New York 1986</p>
-
-        <Link href="https://www.icp.org/browse/archive/constituents/cornell-capa?all/all/all/all/0">For more on Cornell Capa and ICP...</Link>
 
         <PhotoGallery photos={photos} />
 

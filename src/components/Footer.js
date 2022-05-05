@@ -57,7 +57,7 @@ font-size: 14px;
 
 const ContactBlock = styled.div`
 text-align: left;
-width: 300px;
+width: 475px;
 
 `
 
