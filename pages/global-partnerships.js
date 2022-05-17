@@ -48,7 +48,7 @@ export default function Globalpartnerships() {
 
           <p>Years later, King Zog, in exile, found out that the Ostereichers, Austrian court jewelers whom he had rescued, were alive but destitute in England. He promptly returned the crown jewels he had commissioned from them, to give this family an opportunity to rebuild their lives. “There was no government conspiracy, no underground railroad, no organized resistance — only individual Albanians acting to save lives,” says Mr. Gershman. “My portraits and their stories are meant to reflect their humanity, their dignity, their religious and moral convictions, and their quiet courage. Gershman further explains this extraordinary code of honor: “If there is a knock on the door, take responsibility because every knock on the door is a blessing from God.”  As a photographer and Jew, this is visceral in me and the reason why I was compelled to tell this story. </p>
 
-          <p>To view the exhibit, visit <Link href="https://www.yadvashem.org/ready2print/besa.html">https://www.yadvashem.org/ready2print/besa.html</Link>
+          <p>To view the exhibit, visit <Link href="https://www.yadvashem.org/ready2print/besa.html"><a target="_blank">https://www.yadvashem.org/ready2print/besa.html</a></Link>
           </p>
           </div>
           <YadImage>
@@ -65,7 +65,7 @@ export default function Globalpartnerships() {
       <HebrewCopy>
       <h2>Hebrew Union College Traveling Exhibit</h2>
       <p>The Hebrew Union College is a center of innovation for Jewish life to provide knowledge, commitment, vision, and expertise to strengthen and transform the Jewish community and larger world. The estate of Norman Gershman has maintained a decade-long partnership with HUC to coordinate the US exposure of the BESA show.</p>
-      <p>For more information, visit: <Link href="http://huc.edu/search/site/norman%20gershman">http://huc.edu/search/site/norman%20gershman</Link></p>
+      <p>For more information, visit: <Link href="http://huc.edu/search/site/norman gershman"><a target="_blank">http://huc.edu/search/site/norman%20gershman</a></Link></p>
 
       </HebrewCopy>
       </div>
@@ -79,12 +79,14 @@ export default function Globalpartnerships() {
 
 <h2>International Center for Photography Grant.</h2>
 <p>Founded in 1974, the ICP is the world&quot;s leading institution dedicated to photography and visual culture. Norman studied with ICP founder Cornell Capa after discovering his vision for “concerned photography” - socially and politically minded images that can educate and change the world.</p>
+
+{/*
 <ICPRow>
   <Image src="/img/icp1.jpeg" width={320} height={274} alt="International Center for Photography 1" layout="fixed" />
   <Image src="/img/icp2.jpeg" width={320} height={240} alt="International Center for Photography 2" layout="fixed" />
   <Image src="/img/icp3.jpeg" width={206} height={320} alt="International Center for Photography 3" layout="fixed" />
 </ICPRow>
-
+*/}
 <p>Today, the estate of Norman Gershman has established a permanent endowment to provide an annual scholarship for students in ICP&quot;s renowned Imagemakers program. Several of Mr. Gershman&quot;s works have been acquired into the permanent collection of the ICP.</p>
 
 </Layout>

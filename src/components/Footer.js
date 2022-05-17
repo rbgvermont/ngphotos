@@ -75,6 +75,10 @@ text-align: left;
 padding: 10px;
 `
 
+const BooksSpacer = styled.div`
+width: 300px;
+`
+
 const BookImage = styled.div`
 padding: 20px;
 
@@ -99,57 +103,6 @@ export const Footer = (props) => {
         </Link>
       </NavContainer>
 
-      <SocialContainer>
-      <SocialIcon>
-        <Image
-          src="/img/layout/facebook.webp"
-          alt="Facebook"
-          layout="fixed"
-          width="35"
-          height="35"
-        />
-      </SocialIcon>
-      <SocialIcon>
-        <Image
-          src="/img/layout/instagram.webp"
-          alt="Instagram"
-          layout="fixed"
-          width="35"
-          height="35"
-        />
-      </SocialIcon>
-      <SocialIcon>
-        <Image
-          src="/img/layout/Youtube.webp"
-          alt="Instagram"
-          layout="fixed"
-          width="35"
-          height="35"
-        />
-      </SocialIcon>
-      <SocialIcon>
-        <Image
-          src="/img/layout/Pintrest.webp"
-          alt="Pintrest"
-          layout="fixed"
-          width="35"
-          height="35"
-        />
-      </SocialIcon>
-      <SocialIcon>
-        <Image
-          src="/img/layout/email.webp"
-          alt="Email"
-          layout="fixed"
-          width="35"
-          height="35"
-        />
-      </SocialIcon>
-
-
-
-      </SocialContainer>
-
       <FooterBlocks>
     <ContactBlock>
       <h3>Contact:</h3>
@@ -164,17 +117,7 @@ export const Footer = (props) => {
     <div>
 
       <BooksBlock>
-
-
-
-        <div>
-        <h3>Books:</h3>
-          <p>Over a five-year period, photographer Norman H. Gershman sought out, photographed, and collected these powerful and moving stories of heroism in Besa: Muslims Who Saved Jews in World War II.</p>
-          <p>This coffee table book reveals a hidden period in history, slowly emerging after the fall of an isolationist communist regime, and shows the compassionate side of ordinary people in saving Jews. They acted within their true Muslim faith.</p>
-        </div>
-        <BookImage>
-          <Image src="/img/besa-book.jpeg" alt="BESA Book" width={300} height={301} />
-        </BookImage>
+        <BooksSpacer>&nbsp;</BooksSpacer>
       </BooksBlock>
     </div>
 
@@ -183,28 +126,28 @@ export const Footer = (props) => {
         <ul>
           <li>
             <Link href="https://www.yadvashem.org/yv/en/exhibitions/besa/norman-gershman.asp" passHref>
-        Yad Vashem
+            <a target="_blank">Yad Vashem</a>
       </Link></li>
 
           <li>
             <Link href="https://diplomatonline.com/mag/2010/09/the-photographer-who-documents-heroes/diplomat_sep10034/" passHref>
-        Diplomat Canada
+            <a target="_blank">Diplomat Canada</a>
             </Link>
             </li>
 
             <li>
               <Link href=" https://search.alexanderstreet.com/preview/work/bibliographic_entity%7Cvideo_work%7C3167244" passHref>
-                Charles Osgood
+              <a target="_blank">Charles Osgood</a>
               </Link>
             </li>
           <li>
             <Link href="https://www.youtube.com/watch?v=YWeRgiprKjM" passHref>
-              Weekly Zaman
+              <a target="_blank">Weekly Zaman</a>
             </Link>
           </li>
           <li>
           <Link href="https://www.thedailybeast.com/jews-are-gods-people-like-us" passHref>
-            The Daily Beast
+          <a target="_blank">The Daily Beast</a>
           </Link>
           </li>
         </ul>
@@ -212,7 +155,7 @@ export const Footer = (props) => {
     </LinkBlock>
 
       </FooterBlocks>
-      <FooterTagline><p>Copyright &copy; 2022 Norman Gershman. All Rights Reserved.</p>&nbsp;|&nbsp;<Link href="https://www.vtapi.co">vtapi.co</Link></FooterTagline>
+      <FooterTagline><p>Copyright &copy; 2022 Norman Gershman. All Rights Reserved.</p>&nbsp;|&nbsp;<Link href="https://www.vtapi.co" passHref><a target="_blank">vtapi.co</a></Link></FooterTagline>
     </FooterContainer>
   )
 }

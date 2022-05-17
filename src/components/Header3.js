@@ -68,8 +68,16 @@ export const Header3 = (props) => {
           <StyledLink>GLOBAL PARTNERSHIPS</StyledLink>
         </Link>
 
-        <Link href="/schedule-event" passHref>
-          <StyledLink>SCHEDULE AN EVENT</StyledLink>
+        <Link href="/besa-events-and-book" passHref>
+          <StyledLink>BESA - EVENTS AND BOOK</StyledLink>
+        </Link>
+
+        <Link href="/buy-a-print" passHref>
+          <StyledLink>BUY A PRINT</StyledLink>
+        </Link>
+
+        <Link href="/contact" passHref>
+          <StyledLink>CONTACT</StyledLink>
         </Link>
       </div>
 
