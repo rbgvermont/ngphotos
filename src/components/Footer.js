@@ -88,6 +88,9 @@ padding: 20px;
 export const Footer = (props) => {
   return (
     <FooterContainer>
+      {/*
+      //footer nav links if desired in the future
+
       <NavContainer>
         <Link href="/about" passHref>
           <StyledLink>ABOUT</StyledLink>
@@ -102,6 +105,7 @@ export const Footer = (props) => {
           <StyledLink>SCHEDULE AN EVENT</StyledLink>
         </Link>
       </NavContainer>
+    */}
 
       <FooterBlocks>
     <ContactBlock>
