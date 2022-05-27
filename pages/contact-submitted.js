@@ -9,10 +9,6 @@ let ContactInfo = styled.div`
 max-width: 500px;
 `
 
-let HiddenP = styled.div`
-display: none;
-`
-
 export default function Contact() {
   return (
 
@@ -30,28 +26,7 @@ export default function Contact() {
     <p>Martine Bisagni, Archivist and Curator mia@normangershman.com</p>
     </ContactInfo>
     <div>
-
-    <form name="contact" method="POST" data-netlify="true" action="/contact-submitted" netlify-honeypot="bot-field">
-    <HiddenP>
-      <label>
-        Don’t fill this out if you’re human: <input name="bot-field" />
-      </label>
-    </HiddenP>
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <div data-netlify-recaptcha="true"></div>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
-
+      <p>Thank you for contacting us we will get back to you soon</p>
     </div>
     </FormWrapper>
     </Layout>
