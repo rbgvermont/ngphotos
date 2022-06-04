@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image'
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import Layout from '../../src/components/Layout';
 import styled from 'styled-components';
 
@@ -21,6 +22,9 @@ export default function Naturalworld() {
       <div>
 
         <Gallery>
+        <ResponsiveMasonry
+                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
+        <Masonry columnsCount={3}>
           <Item
             original="/img/naturalworld/nature1b.jpg"
             thumbnail="/img/naturalworld/nature1b.jpg"
@@ -28,7 +32,7 @@ export default function Naturalworld() {
             height="1058"
           >
             {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature1b.jpg" width={250}  />
+              <img ref={ref} onClick={open} src="/img/naturalworld/nature1b.jpg" width={250} />
             )}
           </Item>
 
@@ -75,6 +79,8 @@ export default function Naturalworld() {
               <img ref={ref} onClick={open} src="/img/naturalworld/nature5b.jpg" width={250}  />
             )}
           </Item>
+          </Masonry>
+          </ResponsiveMasonry>
 
         </Gallery>
 
