@@ -1,59 +1,104 @@
 import  Layout from '../src/components/Layout';
 import styled from 'styled-components';
 
-let FormWrapper = styled.div`
+let MainWrapper = styled.div`
 display: flex;
 `
 
 let ContactInfo = styled.div`
-max-width: 500px;
+max-width: 440px;
 `
 
 let HiddenP = styled.div`
 display: none;
 `
 
+let InputRow = styled.div`
+width: 100%;
+text-align: center;
+padding: 10px;
+vertical-align: middle;
+
+p {
+
+  text-align: left;
+  padding: 10px;
+}
+
+input, textarea {
+  width: 80%;
+}
+
+input {
+  height: 50px;
+}
+
+button {
+  width: 80%;
+  height: 50px;
+}
+`
+
+let FormWrapper = styled.div`
+margin-left: 20px;
+
+width: 100%
+`
+
+let TheForm = styled.form`
+width: 100%;
+`
+
 export default function Contact() {
   return (
 
     <Layout title="normangershman.com - contact">
-    <h1>Contact</h1>
 
-    <FormWrapper>
-    <ContactInfo>
-    <p>The Norman Gershman Photographic Archive was established in the summer of 2021 and is housed in Montpelier, Vermont; The Archive contains all of the works of Norman Gershman. While still in its formative stages as the Archive is organized, printing of newly rediscovered work is already underway.</p>
-    <p>PRE-ORDERS will soon be available and each month&apos;s more prints will be added to the available list as they are properly evaluated and prepared.</p>
-    <p>Should you be interested in any particular image you see in the Archives, please do let us know. We look forward to hearing from you.</p>
 
-    <p>Eric Gershman, Trustee and Director eric@normangershman.com</p>
+    <MainWrapper>
+      <ContactInfo>
+      <h1>Contact</h1>
+      <p>The Norman Gershman Photographic Archive was established in the summer of 2021 and is housed in Montpelier, Vermont; The Archive contains all of the works of Norman Gershman. While still in its formative stages as the Archive is organized, printing of newly rediscovered work is already underway.</p>
+      <p>PRE-ORDERS will soon be available and each month&apos;s more prints will be added to the available list as they are properly evaluated and prepared.</p>
+      <p>Should you be interested in any particular image you see in the Archives, please do let us know. We look forward to hearing from you.</p>
 
-    <p>Martine Bisagni, Archivist and Curator mia@normangershman.com</p>
-    </ContactInfo>
-    <div>
+      <p>Eric Gershman, Trustee and Director eric@normangershman.com</p>
 
-    <form name="contact" method="POST" data-netlify="true" action="/contact-submitted" netlify-honeypot="bot-field">
-    <HiddenP>
-      <label>
-        Don’t fill this out if you’re human: <input name="bot-field" />
-      </label>
-    </HiddenP>
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <div data-netlify-recaptcha="true"></div>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+      <p>Martine Bisagni, Archivist and Curator mia@normangershman.com</p>
+      </ContactInfo>
 
-    </div>
-    </FormWrapper>
+      <FormWrapper>
+
+        <TheForm name="contact" method="POST" data-netlify="true" action="/contact-submitted" netlify-honeypot="bot-field">
+        <HiddenP>
+          <label>
+            Don&apos;t touch the hand mixed the mess: <input name="bot-field" />
+          </label>
+          <div data-netlify-recaptcha="true"></div>
+        </HiddenP>
+          <InputRow>
+            <p>
+              <label htmlFor="name">Name: </label>
+            </p><input type="text" name="name" id="name" />
+          </InputRow>
+          <InputRow>
+          <p>
+            <label htmlFor="email">Email: </label>
+
+          </p><input type="email" name="email" id="email" />
+          </InputRow>
+          <InputRow>
+          <p>
+            <label htmlFor="message">Message: </label>
+          </p><textarea name="message" id="message" rows="7"></textarea>
+          </InputRow>
+          <InputRow>
+            <button type="submit">Send</button>
+          </InputRow>
+        </TheForm>
+
+      </FormWrapper>
+    </MainWrapper>
     </Layout>
   )
 }

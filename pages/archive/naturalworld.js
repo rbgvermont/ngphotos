@@ -28,7 +28,7 @@ export default function Naturalworld() {
             height="1058"
           >
             {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature1b.jpg" width={400}  />
+              <img ref={ref} onClick={open} src="/img/naturalworld/nature1b.jpg" width={250}  />
             )}
           </Item>
 
@@ -39,7 +39,7 @@ export default function Naturalworld() {
             height="1178"
           >
             {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature2b.jpg" width={400}  />
+              <img ref={ref} onClick={open} src="/img/naturalworld/nature2b.jpg" width={250}  />
             )}
           </Item>
 
@@ -50,7 +50,7 @@ export default function Naturalworld() {
             height="1037"
           >
             {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature3b.jpg" width={400}  />
+              <img ref={ref} onClick={open} src="/img/naturalworld/nature3b.jpg" width={250}  />
             )}
           </Item>
 
@@ -61,7 +61,7 @@ export default function Naturalworld() {
             height="1429"
           >
             {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature4b.jpg" width={400}  />
+              <img ref={ref} onClick={open} src="/img/naturalworld/nature4b.jpg" width={250}  />
             )}
           </Item>
 
@@ -72,7 +72,7 @@ export default function Naturalworld() {
             height="1473"
           >
             {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature5b.jpg" width={400}  />
+              <img ref={ref} onClick={open} src="/img/naturalworld/nature5b.jpg" width={250}  />
             )}
           </Item>
 

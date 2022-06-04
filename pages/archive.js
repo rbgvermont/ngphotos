@@ -88,10 +88,6 @@ export default function archive() {
 
       </PhotoRow>
 
-
-
-
-
     </Layout>
   )
 }
