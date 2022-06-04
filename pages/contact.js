@@ -69,7 +69,13 @@ export default function Contact() {
 
       <FormWrapper>
 
-        <TheForm name="Contact" method="POST" data-netlify="true" action="/contact-submitted" netlify-honeypot="bot-field">
+        <TheForm
+          netlify
+          name="Contact"
+          method="POST"
+          action="/contact-submitted"
+          netlify-honeypot="bot-field"
+        >
         <HiddenP>
           <label>
             Don&apos;t touch the hand mixed the mess: <input name="bot-field" id="bot-field" />
