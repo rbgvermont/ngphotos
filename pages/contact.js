@@ -70,12 +70,14 @@ export default function Contact() {
       <FormWrapper>
 
         <TheForm
+          encType="application/x-www-form-urlencoded"
           data-netlify="true"
-          name="Contact"
+          name="contact"
           method="POST"
-          
+          action="/contact-submitted"
           netlify-honeypot="bot-field"
         >
+        <input type="hidden" name="form-name" value="contact" />
         <HiddenP>
           <label>
             Don&apos;t touch the hand mixed the mess: <input name="bot-field" id="bot-field" />
