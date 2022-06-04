@@ -69,28 +69,28 @@ export default function Contact() {
 
       <FormWrapper>
 
-        <TheForm name="contact" method="POST" data-netlify="true" action="/contact-submitted" netlify-honeypot="bot-field">
+        <TheForm name="Contact" method="POST" data-netlify="true" action="/contact-submitted" netlify-honeypot="bot-field">
         <HiddenP>
           <label>
-            Don&apos;t touch the hand mixed the mess: <input name="bot-field" />
+            Don&apos;t touch the hand mixed the mess: <input name="bot-field" id="bot-field" />
           </label>
           <div data-netlify-recaptcha="true"></div>
         </HiddenP>
           <InputRow>
             <p>
-              <label htmlFor="name">Name: </label>
-            </p><input type="text" name="name" id="name" />
+              <label htmlFor="Name">Name: </label>
+            </p><input type="text" name="Name" id="Name" />
           </InputRow>
           <InputRow>
           <p>
-            <label htmlFor="email">Email: </label>
+            <label htmlFor="Email">Email: </label>
 
-          </p><input type="email" name="email" id="email" />
+          </p><input type="email" name="Email" id="Email" />
           </InputRow>
           <InputRow>
           <p>
-            <label htmlFor="message">Message: </label>
-          </p><textarea name="message" id="message" rows="7"></textarea>
+            <label htmlFor="Message">Message: </label>
+          </p><textarea name="Message" id="Message" rows="7"></textarea>
           </InputRow>
           <InputRow>
             <button type="submit">Send</button>
