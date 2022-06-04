@@ -70,10 +70,10 @@ export default function Contact() {
       <FormWrapper>
 
         <TheForm
-          netlify
+          data-netlify="true"
           name="Contact"
           method="POST"
-          action="/contact-submitted"
+          
           netlify-honeypot="bot-field"
         >
         <HiddenP>
