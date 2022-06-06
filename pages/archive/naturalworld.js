@@ -15,6 +15,34 @@ const GalleryWrapper = styled.div`
 
 export default function Naturalworld() {
 
+  const images = [
+    {
+            "width": 1580,
+            "height": 1058,
+            "src": "../img/naturalworld/nature1b.jpg"
+    },
+    {
+            "width": 1511,
+            "height": 1178,
+            "src": "../img/naturalworld/nature2b.jpg"
+    },
+    {
+            "width": 1031,
+            "height": 1037,
+            "src": "../img/naturalworld/nature3b.jpg"
+    },
+    {
+            "width": 1356,
+            "height": 1429,
+            "src": "../img/naturalworld/nature4b.jpg"
+    },
+    {
+            "width": 1946,
+            "height": 1473,
+            "src": "../img/naturalworld/nature5b.jpg"
+    }
+  ];
+
   return (
 
     <Layout title="normangershman.com - archives - natural world">
@@ -22,64 +50,25 @@ export default function Naturalworld() {
       <div>
 
         <Gallery>
-        <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
-        <Masonry columnsCount={3}>
-          <Item
-            original="/img/naturalworld/nature1b.jpg"
-            thumbnail="/img/naturalworld/nature1b.jpg"
-            width="1580"
-            height="1058"
-          >
-            {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature1b.jpg" width={250} />
-            )}
-          </Item>
+          <ResponsiveMasonry
+                  columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
+          <Masonry columnsCount={3}>
 
-          <Item
-            original="/img/naturalworld/nature2b.jpg"
-            thumbnail="/img/naturalworld/nature2b.jpg"
-            width="1511"
-            height="1178"
-          >
-            {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature2b.jpg" width={250}  />
-            )}
-          </Item>
+            { images.map( (image, key) => {
+              return <Item
+                original={image.src}
+                thumbnail={image.src}
+                width={image.width}
+                height={image.height}
+                key={key}
+              >
+                {({ ref, open }) => (
+                  <img ref={ref} onClick={open} src={image.src} width={250}  />
+                )}
+              </Item>
+            })}
 
-          <Item
-            original="/img/naturalworld/nature3b.jpg"
-            thumbnail="/img/naturalworld/nature3b.jpg"
-            width="1031"
-            height="1037"
-          >
-            {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature3b.jpg" width={250}  />
-            )}
-          </Item>
-
-          <Item
-            original="/img/naturalworld/nature4b.jpg"
-            thumbnail="/img/naturalworld/nature4b.jpg"
-            width="1356"
-            height="1429"
-          >
-            {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature4b.jpg" width={250}  />
-            )}
-          </Item>
-
-          <Item
-            original="/img/naturalworld/nature5b.jpg"
-            thumbnail="/img/naturalworld/nature5b.jpg"
-            width="1946"
-            height="1473"
-          >
-            {({ ref, open }) => (
-              <img ref={ref} onClick={open} src="/img/naturalworld/nature5b.jpg" width={250}  />
-            )}
-          </Item>
-          </Masonry>
+            </Masonry>
           </ResponsiveMasonry>
 
         </Gallery>
