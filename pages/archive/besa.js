@@ -5,6 +5,8 @@ import 'photoswipe/dist/photoswipe.css'
 import { Gallery, Item } from 'react-photoswipe-gallery'
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
+import { ResponsivePhotoGallery } from '../../src/components/ResponsivePhotoGallery';
+
 export default function Besa() {
 
 const images = [
@@ -153,29 +155,7 @@ const images = [
 
         { /* <PhotoGallery photos={photos} /> */ }
 
-        <Gallery>
-          <ResponsiveMasonry
-                  columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
-          <Masonry columnsCount={3}>
-
-            { images.map( (image, key) => {
-              return <Item
-                original={image.src}
-                thumbnail={image.src}
-                width={image.width}
-                height={image.height}
-                key={key}
-              >
-                {({ ref, open }) => (
-                  <img ref={ref} onClick={open} src={image.src} width={250}  />
-                )}
-              </Item>
-            })}
-
-            </Masonry>
-          </ResponsiveMasonry>
-
-        </Gallery>
+        <ResponsivePhotoGallery photos={images}/>
 
      </div>
     </Layout>

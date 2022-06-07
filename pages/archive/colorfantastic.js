@@ -1,52 +1,51 @@
 import Link from 'next/link';
 import Layout from '../../src/components/Layout';
-import { PhotoGallery } from '../../src/components/PhotoGallery';
+import { ResponsivePhotoGallery } from '../../src/components/ResponsivePhotoGallery';
 
 export default function Colorfantastic() {
 
-  var photos = [
+  const images = [
     {
-      src: "/img/colorfantastic/color1b.jpg",
-      width: 800,
-      height: 600
+            "width": 1192,
+            "height": 960,
+            "src": "../img/colorfantastic/color1b.jpg"
     },
     {
-      src: "/img/colorfantastic/color2b2.jpg",
-      width: 800,
-      height: 600
+            "width": 1330,
+            "height": 1053,
+            "src": "../img/colorfantastic/color2b2.jpg"
     },
     {
-      src: "/img/colorfantastic/color3b.jpg",
-      width: 800,
-      height: 600
+            "width": 1153,
+            "height": 911,
+            "src": "../img/colorfantastic/color3b.jpg"
     },
     {
-      src: "/img/colorfantastic/color4b.jpg",
-      width: 800,
-      height: 600
+            "width": 1123,
+            "height": 1331,
+            "src": "../img/colorfantastic/color4b.jpg"
     },
     {
-      src: "/img/colorfantastic/color5b.jpg",
-      width: 800,
-      height: 600
+            "width": 1330,
+            "height": 1011,
+            "src": "../img/colorfantastic/color5b.jpg"
     },
     {
-      src: "/img/colorfantastic/color6b.jpg",
-      width: 800,
-      height: 600
+            "width": 1329,
+            "height": 1045,
+            "src": "../img/colorfantastic/color6b.jpg"
     },
     {
-      src: "/img/colorfantastic/color7b.jpg",
-      width: 800,
-      height: 600
+            "width": 1333,
+            "height": 1025,
+            "src": "../img/colorfantastic/color7b.jpg"
     },
     {
-      src: "/img/colorfantastic/color8b.jpg",
-      width: 800,
-      height: 600
+            "width": 1329,
+            "height": 1013,
+            "src": "../img/colorfantastic/color8b.jpg"
     }
-
-  ]
+]
 
   return (
 
@@ -54,7 +53,7 @@ export default function Colorfantastic() {
       <h2>COLOR FANTASTIC</h2>
       <div>
 
-        <PhotoGallery photos={photos} />
+      <ResponsivePhotoGallery photos={images}/>
 
      </div>
     </Layout>

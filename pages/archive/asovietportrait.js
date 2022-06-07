@@ -1,128 +1,137 @@
 import Link from 'next/link';
 import Layout from '../../src/components/Layout';
-import { PhotoGallery } from '../../src/components/PhotoGallery';
+import { ResponsivePhotoGallery } from '../../src/components/ResponsivePhotoGallery';
 
 export default function Asovietportrait() {
 
-  var photos = [
+  const images =
+  [
     {
-      src: "/img/sovietportrait/ASP_02-earlyeveningmoscow.jpg",
-      width: 800,
-      height: 600
+            "width": 5193,
+            "height": 3632,
+            "src": "../img/sovietportrait/ASP_02-earlyeveningmoscow.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_05-portraitwithfriendskiev.jpg",
-      width: 800,
-      height: 600
+            "width": 3160,
+            "height": 2848,
+            "src": "../img/sovietportrait/ASP_05-portraitwithfriendskiev.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_11-paraderehearsalLENINGRAD.jpg",
-      width: 800,
-      height: 600
+            "width": 4424,
+            "height": 5576,
+            "src": "../img/sovietportrait/ASP_10-grandmotherandgrandsonMOSCOW.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_13-monumenttoleninnovosibisk.jpg",
-      width: 800,
-      height: 600
+            "width": 5400,
+            "height": 4096,
+            "src": "../img/sovietportrait/ASP_11-paraderehearsalLENINGRAD.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_14-artist,novodevichiimonasterymoscow.jpg",
-      width: 800,
-      height: 600
+            "width": 4963,
+            "height": 3988,
+            "src": "../img/sovietportrait/ASP_13-monumenttoleninnovosibisk.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_15-vietnamesestudiesscholarmoscow.jpg",
-      width: 800,
-      height: 600
+            "width": 4768,
+            "height": 6160,
+            "src": "../img/sovietportrait/ASP_14-artist,novodevichiimonasterymoscow.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_16-artistandhealertbilisi.jpg",
-      width: 800,
-      height: 600
+            "width": 3968,
+            "height": 5336,
+            "src": "../img/sovietportrait/ASP_15-vietnamesestudiesscholarmoscow.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_17-intouristdriverleningrad.jpg",
-      width: 800,
-      height: 600
+            "width": 4602,
+            "height": 5827,
+            "src": "../img/sovietportrait/ASP_16-artistandhealertbilisi.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_18-pedestrianleningrad.jpg",
-      width: 800,
-      height: 600
+            "width": 4784,
+            "height": 5944,
+            "src": "../img/sovietportrait/ASP_17-intouristdriverleningrad.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_20-studenthonorguardirkutsk.jpg",
-      width: 800,
-      height: 600
+            "width": 4576,
+            "height": 5792,
+            "src": "../img/sovietportrait/ASP_18-pedestrianleningrad.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_23-museumgatekeepersamarkand.jpg",
-      width: 800,
-      height: 600
+            "width": 5578,
+            "height": 4265,
+            "src": "../img/sovietportrait/ASP_19-pioneerpalacemoscow.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_24-worldwarIIveteranodessa.jpg",
-      width: 800,
-      height: 600
+            "width": 5480,
+            "height": 3752,
+            "src": "../img/sovietportrait/ASP_20-studenthonorguardirkutsk.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_25-maninparklvov.jpg",
-      width: 800,
-      height: 600
+            "width": 5170,
+            "height": 3849,
+            "src": "../img/sovietportrait/ASP_23-museumgatekeepersamarkand.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_26-twowomenkishinev.jpg",
-      width: 800,
-      height: 600
+            "width": 4344,
+            "height": 5488,
+            "src": "../img/sovietportrait/ASP_24-worldwarIIveteranodessa.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_28-chickenvendorstbilisi.jpg",
-      width: 800,
-      height: 600
+            "width": 3288,
+            "height": 5512,
+            "src": "../img/sovietportrait/ASP_25-maninparklvov.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_29-awaitingprayercallsamarkand.jpg",
-      width: 800,
-      height: 600
+            "width": 3957,
+            "height": 6088,
+            "src": "../img/sovietportrait/ASP_26-twowomenkishinev.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_30-studenttheatregroupkishinev.jpg",
-      width: 800,
-      height: 600
+            "width": 4704,
+            "height": 4736,
+            "src": "../img/sovietportrait/ASP_28-chickenvendorstbilisi.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_31-artistswifetbilisi.jpg",
-      width: 800,
-      height: 600
+            "width": 4841,
+            "height": 5041,
+            "src": "../img/sovietportrait/ASP_29-awaitingprayercallsamarkand.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_32-synagogueeldersamarkand.jpg",
-      width: 800,
-      height: 600
+            "width": 5208,
+            "height": 4224,
+            "src": "../img/sovietportrait/ASP_30-studenttheatregroupkishinev.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_33-townsquarelvov.jpg",
-      width: 800,
-      height: 600
+            "width": 3464,
+            "height": 4624,
+            "src": "../img/sovietportrait/ASP_31-artistswifetbilisi.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_34-streetintheoldquarterlvov.jpg",
-      width: 800,
-      height: 600
+            "width": 4360,
+            "height": 5496,
+            "src": "../img/sovietportrait/ASP_32-synagogueeldersamarkand.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_36-motherandsonmoscow.jpg",
-      width: 800,
-      height: 600
+            "width": 6073,
+            "height": 3968,
+            "src": "../img/sovietportrait/ASP_33-townsquarelvov.jpg"
     },
     {
-      src: "/img/sovietportrait/ASP_38-self-portraitkishinev.jpg",
-      width: 800,
-      height: 600
+            "width": 4496,
+            "height": 6240,
+            "src": "../img/sovietportrait/ASP_34-streetintheoldquarterlvov.jpg"
     },
-
-  ]
-
+    {
+            "width": 4360,
+            "height": 5880,
+            "src": "../img/sovietportrait/ASP_36-motherandsonmoscow.jpg"
+    },
+    {
+            "width": 3128,
+            "height": 2552,
+            "src": "../img/sovietportrait/ASP_38-self-portraitkishinev.jpg"
+    }
+]
   return (
 
     <Layout title="normangershman.com - archives - ladies of the palace">
@@ -143,7 +152,7 @@ export default function Asovietportrait() {
 
         <Link href="https://www.icp.org/browse/archive/constituents/cornell-capa?all/all/all/all/0">For more on Cornell Capa and ICP...</Link>
 
-        <PhotoGallery photos={photos} />
+        <ResponsivePhotoGallery photos={images}/>
 
      </div>
     </Layout>

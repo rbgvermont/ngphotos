@@ -140,7 +140,7 @@ export const Footer = (props) => {
             </li>
 
             <li>
-              <Link href=" https://search.alexanderstreet.com/preview/work/bibliographic_entity%7Cvideo_work%7C3167244" passHref>
+              <Link href="https://search.alexanderstreet.com/preview/work/bibliographic_entity%7Cvideo_work%7C3167244" passHref>
               <a target="_blank">Charles Osgood</a>
               </Link>
             </li>

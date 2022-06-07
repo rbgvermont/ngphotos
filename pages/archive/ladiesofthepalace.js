@@ -1,76 +1,75 @@
 import Layout from '../../src/components/Layout';
-import { PhotoGallery } from '../../src/components/PhotoGallery';
+import { ResponsivePhotoGallery } from '../../src/components/ResponsivePhotoGallery';
 
 export default function Ladiesofthepalace() {
 
-  var photos = [
+  const images = [
     {
-      src: "/img/ladiesofthepalace/LOP-01.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-01.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-02.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-02.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-03.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-03.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-04.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-04.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-05.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-05.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-06.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-06.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-07.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-07.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-08.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-08.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-09.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-09.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-10.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-10.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-11.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-11.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-12.jpg",
-      width: 800,
-      height: 600
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-12.jpg"
     },
     {
-      src: "/img/ladiesofthepalace/LOP-13.jpg",
-      width: 800,
-      height: 600
-    },
-
-  ]
+            "width": 2400,
+            "height": 1600,
+            "src": "../img/ladiesofthepalace/LOP-13.jpg"
+    }
+]
 
   return (
 
@@ -81,7 +80,7 @@ export default function Ladiesofthepalace() {
 &lsquo;The Palace in Coral Gables has seen many people come and go. In his time there,  Norman Gershman decided to take on the task of capturing the essence of the marvelous inhabitants of The Palace. He further pushed his portraiture to evoke the personality and charm of the Ladies of the Palace. Meet women who have experienced life as artists, champion athletes, rockettes and flamenco dancers, dear friends and familiar faces.&rsquo;
 </p>
 <p>Anthony Diaz, assistant</p>
-        <PhotoGallery photos={photos} />
+  <ResponsivePhotoGallery photos={images}/>
 
 <p>
 &lsquo;Ladies of the Palace&rsquo; is Norman Gershman&apos;s last series of work created at The Palace in Coral Gables in 2018. These photos are a tribute to ageless beauty that is as much of the spirit as it is of the flesh reflective of living to the fullest. This is but a sampling of the series.</p>
