@@ -159,7 +159,7 @@ export const Footer = (props) => {
     </LinkBlock>
 
       </FooterBlocks>
-      <FooterTagline><p>Copyright &copy; 2022 Norman Gershman. All Rights Reserved.</p>&nbsp;|&nbsp;<Link href="https://www.vtapi.co" passHref><a target="_blank">vtapi.co</a></Link></FooterTagline>
+      <FooterTagline><p>Copyright &copy; 2022 Norman Gershman. All Rights Reserved</p>&nbsp;</FooterTagline>
     </FooterContainer>
   )
 }

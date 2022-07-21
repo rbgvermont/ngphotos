@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import  Layout from '../src/components/Layout';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ImageWrapper = styled.div`
 width: 100%;
@@ -46,6 +47,16 @@ font-size: 20px;
 text-align: center;
 `
 
+const StyledLink = styled.a`
+
+  color: #FFEE59;
+  padding: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 export default function Home() {
   return (
     <Layout title="normangershman.com - home">
@@ -60,7 +71,7 @@ export default function Home() {
           height="700"
         />
       <WelcomeText>
-        <p>Welcome from the Gershman Family</p>
+        <StyledLink href="/family-statement" passHref><p>WELCOME: to read a statement by the Gershman Family, click here...</p></StyledLink>
       </WelcomeText>
         <Image
           src="/img/norman_homepage.png"
